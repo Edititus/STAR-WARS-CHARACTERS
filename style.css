@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+}
+
+.divContent{
+  width:100%;
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0,0,0,.75);
+  justify-content:center
+}
+
+body {
+
+  padding: 0;
+  margin: 0;
+  font-family: "Bungee", cursive;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  background-color: #000;
+}
+
+button {
+  width:80px;
+  height:40px;
+  z-index: 99;
+  background-color: white;
+  color: black;
+  display: block;
+  border-radius: 10px;
+  margin: 20px;
+
+}
+.white{
+  color: white;
+  font-size: 17px;
+  font-family: sans-serif;
+}
+
+.background {
+  background-image: url(../starwarsimages/Starwars-bg.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+}
+
+h1 {
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+  padding: 0;
+  font-size: 100px;
+  color: darkred;
+  font-weight: bolder;
+}
+
+h2 {
+  margin: 0;
+  margin-top: -1rem;
+  padding: 0;
+  font-size: 60px;
+  color: darkred;
+}
+li {
+  border: 3px solid white;
+  padding: 5px 20px;
+  border-radius: 50px;
+  justify-content: centre;
+  align-items: center;
+  font-weight: bolder;
+  background: #333333;
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.container {
+  display: flex;
+  width: 600px;
+  height: 40rem;
+  border-width: 10px;
+  border-style: solid;
+  border-color: darkred;
+  border-radius: 120px;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url(../starwarsimages/blurredbackground.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: contrast(0.8);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+}
+
+img {
+  width: 30rem;
+  height: 30rem;
+  border: 3px solid darkred;
+  border-radius: 4rem;
+
+}
+
+.text {
+  color: white;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  line-height: 3rem;
+}
+
+@media (max-width:800px){
+  li{
+    width: 400px;
+    padding: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .container{
+    width:100%;
+    height: 80vh;
+    position: relative;
+    bottom: -50px;
+  }
+  .container h2{
+    font-size:20px;
+    display: none;
+  }
+  .sec{
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .background{
+    height: 0vh;
+    width:95%;
+    top: 200px;
+    left: 0px;
+  }
+
+  .round{
+    width:200px;
+    height: 200px;
+         border-radius:200px !important;
+
+  }
+  .background img{
+    width:300px !important;
+     
+     border-radius:500px !important;
+      height:300px !important;
+  }
+  section{
+    height: auto;
+  }
+}
+
+
+@media (max-width:600px){
+  li{
+    width: 200px;
+    padding: 5px;
+    font-size: 12px;
+   
+  }
+  .background{
+    height:40vh
+
+  }
+
+}
